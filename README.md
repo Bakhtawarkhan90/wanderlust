@@ -1,3 +1,6 @@
+Sure! Here's the complete `README.md` file with the updated instructions for running the application using the provided shell script:
+
+```markdown
 # Wanderlust - Your Ultimate Travel Blog 🌍✈️
 
 WanderLust is a simple MERN travel blog website ✈ This project is aimed to help people to contribute in open source, upskill in react and also master git.
@@ -35,19 +38,19 @@ _I'd love for you to make the most of this project - it's all about learning, he
 3. **Install Required Dependencies**
 
    ```bash
-          # installs nvm (Node Version Manager)
-          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   # installs nvm (Node Version Manager)
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
-          # download and install Node.js (you may need to restart the terminal)
-          nvm install 22
+   # download and install Node.js (you may need to restart the terminal)
+   nvm install 22
 
-          # verifies the right Node.js version is in the environment
-          node -v # should print `v22.3.0`
+   # verifies the right Node.js version is in the environment
+   node -v # should print `v22.3.0`
 
-          # verifies the right NPM version is in the environment
-          npm -v # should print `10.8.1`  
+   # verifies the right NPM version is in the environment
+   npm -v # should print `10.8.1`  
   
-          npm i
+   npm i
    ```
 
 4. **Set up your MongoDB Database**
@@ -92,19 +95,19 @@ _I'd love for you to make the most of this project - it's all about learning, he
 2. **Install Dependencies**
 
    ```bash
-        # installs nvm (Node Version Manager)
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   # installs nvm (Node Version Manager)
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
-        # download and install Node.js (you may need to restart the terminal)
-        nvm install 22
+   # download and install Node.js (you may need to restart the terminal)
+   nvm install 22
 
-        # verifies the right Node.js version is in the environment
-        node -v # should print `v22.3.0`
+   # verifies the right Node.js version is in the environment
+   node -v # should print `v22.3.0`
 
-        # verifies the right NPM version is in the environment
-        npm -v # should print `10.8.1`
+   # verifies the right NPM version is in the environment
+   npm -v # should print `10.8.1`
   
-        npm i
+   npm i
    ```
 
 3. **Configure Environment Variables**
@@ -118,141 +121,41 @@ _I'd love for you to make the most of this project - it's all about learning, he
    ```bash
    npm run dev
    ```
-   
-Here's the updated README.md with instructions for running the application using the provided shell script:
 
-markdown
-Copy code
-# Wanderlust - Your Ultimate Travel Blog 🌍✈️
+## Running the Application with Docker
 
-WanderLust is a simple MERN travel blog website ✈ This project is aimed to help people to contribute in open source, upskill in react and also master git.
-
-![Preview Image](https://github.com/krishnaacharyaa/wanderlust/assets/116620586/17ba9da6-225f-481d-87c0-5d5a010a9538)
-
-## [Figma Design File](https://www.figma.com/file/zqNcWGGKBo5Q2TwwVgR6G5/WanderLust--A-Travel-Blog-App?type=design&node-id=0%3A1&mode=design&t=c4oCG8N1Fjf7pxTt-1)
-## [Discord Channel](https://discord.gg/FEKasAdCrG)
-
-## 🎯 Goal of this project
-
-At its core, this project embodies two important aims:
-
-1. **Start Your Open Source Journey**: It's aimed to kickstart your open-source journey. Here, you'll learn the basics of Git and get a solid grip on the MERN stack and I strongly believe that learning and building should go hand in hand.
-2. **React Mastery**: Once you've got the basics down, a whole new adventure begins of mastering React. This project covers everything, from simple form validation to advanced performance enhancements. And I've planned much more cool stuff to add in the near future if the project hits more number of contributors.
-
-_I'd love for you to make the most of this project - it's all about learning, helping, and growing in the open-source world._
-
-## Setting up the project locally
-
-### Setting up the Backend
-
-1. **Fork and Clone the Repository**
-
-   ```bash
-   git clone https://github.com/{your-username}/wanderlust.git
-Navigate to the Backend Directory
-
-bash
-Copy code
-cd backend
-Install Required Dependencies
-
-bash
-Copy code
-# installs nvm (Node Version Manager)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
-# download and install Node.js (you may need to restart the terminal)
-nvm install 22
-
-# verifies the right Node.js version is in the environment
-node -v # should print `v22.3.0`
-
-# verifies the right NPM version is in the environment
-npm -v # should print `10.8.1`  
-
-npm i
-Set up your MongoDB Database
-
-Open MongoDB Compass and connect MongoDB locally at mongodb://localhost:27017.
-Import sample data
-
-To populate the database with sample posts, you can copy the content from the backend/data/sample_posts.json file and insert it as a document in the wanderlust/posts collection in your local MongoDB database using either MongoDB Compass or mongoimport.
-
-bash
-Copy code
-mongoimport --db wanderlust --collection posts --file ./data/sample_posts.json --jsonArray
-Configure Environment Variables
-
-bash
-Copy code
-cp .env.sample .env
-Start the Backend Server
-
-bash
-Copy code
-npm start
-You should see the following on your terminal output on successful setup.
-
-bash
-Copy code
-[BACKEND] Server is running on port 5000
-[BACKEND] Database connected: mongodb://127.0.0.1/wanderlust
-Setting up the Frontend
-Open a New Terminal
-
-bash
-Copy code
-cd frontend
-Install Dependencies
-
-bash
-Copy code
-# installs nvm (Node Version Manager)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
-# download and install Node.js (you may need to restart the terminal)
-nvm install 22
-
-# verifies the right Node.js version is in the environment
-node -v # should print `v22.3.0`
-
-# verifies the right NPM version is in the environment
-npm -v # should print `10.8.1`
-
-npm i
-Configure Environment Variables
-
-bash
-Copy code
-cp .env.sample .env.local
-Launch the Development Server
-
-bash
-Copy code
-npm run dev
-# Running the Application with Docker
 You can now run the application using the provided shell script. Follow these steps:
 
-Clone the Repository
+1. **Clone the Repository**
 
-If you haven't already cloned the repository, run the following command:
+   If you haven't already cloned the repository, run the following command:
+   ```bash
+   git clone https://github.com/Bakhtawarkhan90/wanderlust.git
+   ```
 
-bash
-Copy code
-git clone https://github.com/Bakhtawarkhan90/wanderlust.git
-Navigate to the Project Directory
+2. **Navigate to the Project Directory**
 
-bash
-Copy code
-cd wanderlust
-Run the Shell Script
+   ```bash
+   cd wanderlust
+   ```
 
-Execute the provided shell script to set up Docker, Docker Compose, and run the application:
+3. **Run the Shell Script**
 
-bash
-Copy code
-chmod +x app-run.sh
-./app-run.sh
+   Execute the provided shell script to set up Docker, Docker Compose, and run the application:
+   ```bash
+   chmod +x app-run.sh
+   ./app-run.sh
+   ```
+
+   The script will:
+   - Update the package index
+   - Install Docker and Docker Compose
+   - Add the current logged-in user to the Docker group
+   - Clone the repository
+   - Build and start the Docker containers
+   - Import sample data into MongoDB
+
+   > **Note:** You may need to log out and log back in for the group changes to take effect.
 
 ## 🌟 Ready to Contribute?
 
@@ -263,3 +166,6 @@ Kindly go through [CONTRIBUTING.md](https://github.com/krishnaacharyaa/wanderlus
 If you find this project interesting and inspiring, please consider showing your support by starring it on GitHub! Your star goes a long way in helping me reach more developers and encourages me to keep enhancing the project.
 
 🚀 Feel free to get in touch with me for any further queries or support, happy to help :)
+```
+
+This file includes all the necessary instructions for setting up the project locally and running it using Docker with the provided shell script.
