@@ -118,6 +118,8 @@ _I'd love for you to make the most of this project - it's all about learning, he
    ```bash
    npm run dev
    ```
+   ## Running the Application with Docker
+You can now run the application using the provided shell script. Follow these steps:
 
 ## 🌟 Ready to Contribute?
 
