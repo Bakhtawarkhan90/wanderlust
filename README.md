@@ -137,21 +137,21 @@ cd wanderlust
 chmod +x app-run.sh
 ./app-run.sh
 ```
-The script will:
+**The script will:**
 
-Update the package index
+*Update the package index
 
-Install Docker and Docker Compose
+*Install Docker and Docker Compose
 
-Add the current logged-in user to the Docker group
+*Add the current logged-in user to the Docker group
 
-Clone the repository
+*Clone the repository
 
-Build and start the Docker containers
+*Build and start the Docker containers
 
-Import sample data into MongoDB
+*Import sample data into MongoDB
 
-Note: You may need to log out and log back in for the group changes to take effect.
+|Note: You may need to log out and log back in for the group changes to take effect.
 ## 🌟 Ready to Contribute?
 
 Kindly go through [CONTRIBUTING.md](https://github.com/krishnaacharyaa/wanderlust/blob/main/.github/CONTRIBUTING.md) to understand everything from setup to contributing guidelines.
