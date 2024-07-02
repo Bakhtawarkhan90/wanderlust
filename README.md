@@ -151,7 +151,7 @@ chmod +x app-run.sh
 
 > Import sample data into MongoDB
 
-** Note: You may need to log out and log back in for the group changes to take effect.**
+**Note: You may need to log out and log back in for the group changes to take effect.**
 ## 🌟 Ready to Contribute?
 
 Kindly go through [CONTRIBUTING.md](https://github.com/krishnaacharyaa/wanderlust/blob/main/.github/CONTRIBUTING.md) to understand everything from setup to contributing guidelines.
