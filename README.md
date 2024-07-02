@@ -120,7 +120,12 @@ _I'd love for you to make the most of this project - it's all about learning, he
    ```
    ## Running the Application with Docker
 You can now run the application using the provided shell script. Follow these steps:
+1. **Clone the Repository**
+If you haven't already cloned the repository, run the following command:
 
+```bash
+git clone https://github.com/Bakhtawarkhan90/wanderlust.git
+```
 ## 🌟 Ready to Contribute?
 
 Kindly go through [CONTRIBUTING.md](https://github.com/krishnaacharyaa/wanderlust/blob/main/.github/CONTRIBUTING.md) to understand everything from setup to contributing guidelines.
