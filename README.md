@@ -126,6 +126,19 @@ If you haven't already cloned the repository, run the following command:
 ```bash
 git clone https://github.com/Bakhtawarkhan90/wanderlust.git
 ```
+2.**Navigate to the Project Directory**
+
+```bash
+cd wanderlust
+```
+Run the Shell Script
+
+3. **Execute the provided shell script to set up Docker, Docker Compose, and run the application:**
+
+```bash
+chmod +x app-run.sh
+./app-run.sh
+```
 ## 🌟 Ready to Contribute?
 
 Kindly go through [CONTRIBUTING.md](https://github.com/krishnaacharyaa/wanderlust/blob/main/.github/CONTRIBUTING.md) to understand everything from setup to contributing guidelines.
