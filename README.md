@@ -129,27 +129,24 @@ bash
    
 bash
    npm run dev
-Running the Application with Docker
+5. **Running the Application with Docker**
 You can now run the application using the provided shell script. Follow these steps:
 
-Clone the Repository
-
+# Clone the Repository
 If you haven't already cloned the repository, run the following command:
 
 bash
   Copy code
   git clone https://github.com/Bakhtawarkhan90/wanderlust.git
+
 Navigate to the Project Directory
 
 bash
-  Copy code
   cd wanderlust
-Run the Shell Script
-
+# Run the Shell Script
 Execute the provided shell script to set up Docker, Docker Compose, and run the application:
 
 bash
-  Copy code
   chmod +x app-run.sh
   ./app-run.sh
 
