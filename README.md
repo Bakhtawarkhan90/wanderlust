@@ -131,7 +131,8 @@ git clone https://github.com/Bakhtawarkhan90/wanderlust.git
 ```bash
 cd wanderlust
 ```
-3. **Execute the provided shell script to set up Docker, Docker Compose, and run the application:**
+3.**Execute the provided shell script to set up Docker, Docker Compose, and run the application:**
+
 ```bash
 chmod +x app-run.sh
 ./app-run.sh
