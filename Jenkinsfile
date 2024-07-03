@@ -23,6 +23,7 @@ pipeline {
                 sh 'docker-compose down'           
                 sh 'docker-compose build'
                 sh 'docker-compose up -d'
+                sleep time: 20, unit: 'SECONDS' // Add a 20-second sleep
             }
         }
         
