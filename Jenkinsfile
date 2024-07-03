@@ -1,7 +1,7 @@
 pipeline {
     agent any
-    environment {
-        SONAR_HOME = tool "Sonar"
+    environment{
+        SONAR_HOME= tool "Sonar"
     }
     stages {
         stage('Code Clone') {
@@ -10,26 +10,18 @@ pipeline {
             }
         }
         
-        stage('Code Quality Analysis') {
-            steps {
-                withSonarQubeEnv("Sonar") {
+        stage('Code Quality Analysis'){
+            steps{
+                withSonarQubeEnv("Sonar"){
                     sh "$SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=wanderlust -Dsonar.projectKey=wanderlust"
                 }
             }
         }
-        
         stage('Build with Docker') {
             steps {
                 sh 'docker-compose down'           
                 sh 'docker-compose build'
-                sh 'docker-compose up -d'
-                sleep time: 20, unit: 'SECONDS' // Add a 20-second sleep
-            }
-        }
-        
-        stage('Import Data to MongoDB') {
-            steps {
-                sh 'docker exec -it mongo mongoimport --db wanderlust --collection posts --file ./data/sample_posts.json --jsonArray'
+                sh 'docker-compose up  -d'
             }
         }
     }
