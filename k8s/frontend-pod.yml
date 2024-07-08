@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: frontend-pod
+spec:
+ containers:
+  - name: frontend
+    image: bakhtawar375/w-frontend
+    ports:
+    containerPort: 5173
