@@ -1,6 +1,5 @@
-plaintext
-Copy code
-# Wanderlust Project Setup Instructions
+
+## Wanderlust Project Setup Instructions for Kubernetes ##
 
 ## Running Wanderlust Project with Kubernetes and MongoDB
 
