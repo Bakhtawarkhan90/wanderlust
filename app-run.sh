@@ -13,12 +13,9 @@ sudo usermod -aG docker $USER
 echo "*********************************************** Remove any existing Docker Compose version ***************************************************"
 sudo apt-get remove -y docker-compose
 
-echo "*********************************************** Fetch the latest release version from GitHub ***************************************************"
-VERSION=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r '.tag_name')
-VERSION=${VERSION:-"v2.20.2"}
-
-echo "*********************************************** Install Docker Compose ***************************************************"
-sudo curl -SL https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-linux-x86_64 -o /usr/local/lib/docker/cli-plugins/docker-compose
+echo "*********************************************** Install Docker Compose v2.20.2 ***************************************************"
+sudo mkdir -p /usr/local/lib/docker/cli-plugins/
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/lib/docker/cli-plugins/docker-compose
 
 echo "*********************************************** Apply executable permissions to Docker Compose binary ***************************************************"
 sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
@@ -52,5 +49,6 @@ clear
 
 echo "*********************************************** Show all running Docker containers ***************************************************"
 docker ps
- 
-echo "*********************************************** Now You Can Access The App On Your_ip:5173 ***************************************************"
+
+
+echo "*********************************************** Now You Can Access The App On $(curl -s ifconfig.me):5173 ***************************************"
