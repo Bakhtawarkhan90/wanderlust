@@ -10,15 +10,8 @@ sudo apt-get install -y docker.io
 echo "*********************************************** Add the current logged-in user to the Docker group ***************************************************"
 sudo usermod -aG docker $USER
 
-echo "*********************************************** Remove any existing Docker Compose version ***************************************************"
-sudo apt-get remove -y docker-compose
-
-echo "*********************************************** Install Docker Compose v2.20.2 ***************************************************"
-sudo mkdir -p /usr/local/lib/docker/cli-plugins/
-sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/lib/docker/cli-plugins/docker-compose
-
-echo "*********************************************** Apply executable permissions to Docker Compose binary ***************************************************"
-sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+echo "*********************************************** Install Docker Compose v2 ***************************************************"
+sudo apt-get install docker-compose-v2
 
 echo "*********************************************** Verify Docker Compose installation ***************************************************"
 docker compose version
