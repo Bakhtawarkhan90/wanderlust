@@ -8,6 +8,7 @@ echo "*********************************************** Install Docker ***********
 sudo apt-get install -y docker.io
 
 echo "*********************************************** Add the current logged-in user to the Docker group ***************************************************"
+sudo chown $USER /var/run/docker.sock
 sudo usermod -aG docker $USER
 
 echo "*********************************************** Install Docker Compose v2 ***************************************************"
